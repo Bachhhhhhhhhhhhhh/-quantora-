@@ -1,6 +1,10 @@
+import { resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+
+const rootDir = fileURLToPath(new URL('.', import.meta.url))
 
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? '-quantora-'
 const isGitHubPages = process.env.GITHUB_ACTIONS === 'true'
@@ -34,5 +38,10 @@ export default defineConfig({
     host: true,
     port: 4173,
     open: true,
+  },
+  build: {
+    rollupOptions: {
+      input: resolve(rootDir, 'index.dev.html'),
+    },
   },
 })

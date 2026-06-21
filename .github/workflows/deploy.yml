@@ -27,6 +27,9 @@ jobs:
       - name: Install
         run: npm install --no-audit --no-fund
 
+      - name: Prepare source index for Vite build
+        run: cp index.dev.html index.html
+
       - name: Build
         run: npm run build:ci
         env:
