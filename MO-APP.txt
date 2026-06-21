@@ -1,0 +1,24 @@
+QUANTORA - CACH MO UNG DUNG
+============================
+
+BUOC 1: Double-click file "start.bat" trong thu muc nay
+
+BUOC 2: Doi cua so den (khoang 30 giay)
+
+BUOC 3: Trinh duyet se tu mo. Neu khong, mo thu cong:
+
+   TEST:  http://localhost:3000/ok.html
+   APP:   http://localhost:3000/
+
+BUOC 4: Neu thay "SERVER HOAT DONG!" -> server OK, bam link mo app
+
+BUOC 5: Neu thay thanh xanh "QUANTORA v5.0" o tren cung -> app OK
+
+LUU Y:
+- KHONG dong cua so CMD den khi dung xong
+- KHONG mo file index.html truc tiep (phai qua localhost)
+- Dung Chrome hoac Edge, khong dung IE
+
+LOI THUONG GAP:
+- Trang den: bam Ctrl+Shift+R
+- Khong ket noi: chay lai start.bat
