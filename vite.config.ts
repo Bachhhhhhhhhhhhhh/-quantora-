@@ -40,8 +40,9 @@ export default defineConfig({
     open: true,
   },
   build: {
+    assetsDir: 'quantora-assets',
     rollupOptions: {
-      input: resolve(rootDir, 'index.dev.html'),
+      input: { index: resolve(rootDir, 'index.dev.html') },
     },
   },
 })

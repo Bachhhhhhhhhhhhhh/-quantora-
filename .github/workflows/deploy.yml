@@ -37,14 +37,16 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: SPA fallback
-        run: cp dist/index.html dist/404.html
+        run: |
+          cp dist/index.dev.html dist/index.html
+          cp dist/index.html dist/404.html
 
       - name: Publish build to main root (Pages serves main branch)
         run: |
           cp dist/index.html index.html
           cp dist/404.html 404.html
-          rm -rf assets
-          cp -r dist/assets assets
+          rm -rf quantora-assets
+          cp -r dist/quantora-assets quantora-assets
           cp dist/favicon.svg favicon.svg
           cp dist/ok.html ok.html
           cp dist/icons.svg icons.svg
@@ -54,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html 404.html assets favicon.svg ok.html icons.svg .nojekyll
+          git add index.html 404.html quantora-assets favicon.svg ok.html icons.svg .nojekyll
           git diff --staged --quiet || git commit -m "Deploy: sync production build to main [skip ci]"
           git push
 
