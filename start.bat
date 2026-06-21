@@ -45,6 +45,6 @@ start "" "http://localhost:3000/ok.html"
 start "" "http://localhost:3000/"
 
 echo [3/3] Dang chay server...
-call npx --yes serve dist -l 3000
+call npx --yes serve dist -l 3000 -s
 
 pause
