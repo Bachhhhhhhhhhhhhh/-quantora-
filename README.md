@@ -41,9 +41,12 @@ git push -u origin main
 ### 3. Enable GitHub Pages
 
 1. Repo → **Settings** → **Pages**
-2. **Build and deployment** → Source: **GitHub Actions**
-3. Wait for the `Deploy to GitHub Pages` workflow to finish (Actions tab)
-4. Site live at `https://bachhhhhhhhhhhhhh.github.io/-quantora-/`
+2. **Build and deployment** → Source: **Deploy from a branch**
+3. Branch: **`gh-pages`** → folder **`/ (root)`** → Save
+4. Tab **Actions** → đợi workflow **Deploy to GitHub Pages** chạy xong (1–2 phút)
+5. Site live at `https://bachhhhhhhhhhhhhh.github.io/-quantora-/`
+
+> **Quan trọng:** Phải chọn branch `gh-pages`, KHÔNG chọn `main` (main là source code, không chạy được).
 
 ## Tech stack
 
