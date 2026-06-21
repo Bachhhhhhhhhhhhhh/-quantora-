@@ -4,7 +4,7 @@ Institutional quantitative trading terminal — Monte Carlo, backtester, market 
 
 ## Live demo
 
-After deploy: `https://<username>.github.io/quantora/`
+After deploy: `https://bachhhhhhhhhhhhhh.github.io/-quantora-/`
 
 ## Local development
 
@@ -34,7 +34,7 @@ git init
 git add .
 git commit -m "Initial commit: Quantora v5.0"
 git branch -M main
-git remote add origin https://github.com/<USERNAME>/quantora.git
+git remote add origin https://github.com/Bachhhhhhhhhhhhhh/-quantora-.git
 git push -u origin main
 ```
 
@@ -43,7 +43,7 @@ git push -u origin main
 1. Repo → **Settings** → **Pages**
 2. **Build and deployment** → Source: **GitHub Actions**
 3. Wait for the `Deploy to GitHub Pages` workflow to finish (Actions tab)
-4. Site live at `https://<USERNAME>.github.io/quantora/`
+4. Site live at `https://bachhhhhhhhhhhhhh.github.io/-quantora-/`
 
 ## Tech stack
 
